@@ -24,7 +24,7 @@
       # LD_LIBRARY_PATH in the shell.
       systemPackages = with pkgs; [
         pkg-configUpstream
-        ffmpeg
+        ffmpeg_4 # v4 for libavresample
         libsamplerate
         taglib
         libyaml
@@ -33,7 +33,6 @@
         zlib
         cmake
         qt4
-        # libav
       ];
     in {
       default = pkgs.mkShell {
@@ -58,8 +57,6 @@
                 numpy
                 six
               ]))
-            # This execute some shell code to initialize a venv in $venvDir before dropping into the shell
-            # python3.pkgs.venvShellHook
 
             python2
           ]
