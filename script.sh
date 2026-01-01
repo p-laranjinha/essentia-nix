@@ -28,5 +28,6 @@ python3 waf configure --build-static --static-dependencies --with-examples --wit
 python3 waf
 python3 waf install
 
-rm -rf tmp
+pushd "$ROOT_DIR" &>/dev/null
+mv out/bin/essentia_streaming_extractor_music streaming_extractor_music
 rm -rf essentia
