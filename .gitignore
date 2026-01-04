@@ -3,4 +3,5 @@
 !script.sh
 !flake.nix
 !flake.lock
+!README.md
 !streaming_extractor_music
