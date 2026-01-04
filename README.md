@@ -1,1 +1,1 @@
-This flake was made just to get the binary, not to be installed into a config, so either just download the binary or run `nix develop` if you want to compile it yourself.
+This flake was made just to get the [streaming_extractor_music (v2.1_beta5)](./streaming_extractor_music) binary (from [Essentia](http://essentia.upf.edu)), not to be installed into a config, so either just download the binary or run `nix develop` if you want to compile it yourself.
